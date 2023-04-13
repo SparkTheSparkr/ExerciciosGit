@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FormulárioDaora</title>
+</head>
+<body>
+
+    <H1>Formulário Bem daorinha</H1>
+
+    <form>
+<b>
+        <fieldset>
+            <legend align="center">Dados Pessoais</legend>
+
+        <Label for="nome">Nome:</Label><br>
+            <input type="text" size="50" id="nome" name="nome" maxlength="30" required minlength="2" placeholder="Nome Completo">
+
+    <br><br>
+
+        <label for="telefone">Telefone:</label><br>
+            <input type="tel" name="telefone" id="telefone" maxlength="15" size="15" minlength="15" placeholder="19 99999-9999">
+        
+    <br><br>
+       
+        <label for="email">Email:</label><br>
+             <input type="email" name="email" id="email" maxlength="30" size="25" minlength="5" required placeholder="exemplo@gmail.com">
+        
+    <br><br> 
+
+        <label for="numero">Número Favorito:</label><br>
+            <input type="text" name="numero" id="numero" maxlength="1" size="5" required placeholder="importante!">
+
+    <br><br>
+
+        <label for="foto">Foto:</label><br>
+            <input type="file" name="foto" id="foto" accept=".jpg,.png">
+
+    <br><br>
+
+        <label for="data">Data de Nascimento:</label><br>
+            <input type="date" name="date" id="date" required>
+
+    <br><br>
+
+        <label for="idade">Idade:</label><br>
+            <input type="number" name="idade" id="idade" min="21" max="101" required>
+
+    <br><br>
+
+        <label for="senha">Senha:</label><br>
+            <input type="password" name="senha" id="senha" min="8" max="27" required>
+
+    <br><br>
+
+        <label for="Tdbem">Tudo bem com você?</label><br>
+    </b>
+        Sim    <input type="radio" name="Tdbem" id="Tdbem" checked required value=Sim"><br>
+        Não    <input type="radio" name="Tdbem" id="Tdbem" required value="Não">
+
+    <br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend align="center">Dados Profissionais</legend>
+
+
+        <label for="datatime-local">Data e hora do cadastro:</label><br>
+            <input type="datetime-local" name="datetime-local" id="datetime-local" required>
+
+    <br><br>
+
+        
+        <label for="Cargo">Cargo:</label><br>
+            <input type="text" name="Cargo" id="Cargo" value="Trabalhador" readonly>
+
+    <br><br>
+
+        
+        <label for="Cargo">Cargo:</label><br>
+            <input type="text" name="Cargo" id="Cargo" value="Trabalhador" readonly disabled>
+
+
+    <br><br>
+
+         <label for="Cor">Cor Favorita:</label><br>
+            <input type="color" name="CorFav" id="CorFav" value="#FF0000" list="cores">
+
+        <datalist id="cores">
+            <option value="=#FF0000">Vermelho</option>
+            <option value="#FF02A5">Roxo</option>
+            <option value="#FF8754">Laranja</option>
+        </datalist>
+
+        <br><br>
+
+         
+        <label for="Periodo">Cargo:</label><br>
+            Manhã <input type="checkbox" name="Manhã" id="Manhã" value="M">
+            | Tarde <input type="checkbox" name="Tarde" id="Tarde" value="T">
+            | Noite <input type="checkbox" name="Noite" id="Noite" value="N">
+
+        <br><br>
+
+        <label for="Entrada">Entrada:</label><br>
+        <input type="time" name="Entrada" id="entrada">
+
+        <br><br>
+
+        <label for="MesInicio">Mês de início:</label><br>
+        <input type="month" name="MesInicio" id="MesInicio">
+
+        <br><br>
+
+        <label for="Entrada">Semana de ínicio:</label><br>
+        <input type="week" name="Semana" id="Semana">
+
+        <br><br>
+
+        <label for="Curso">Curso:</label><br>
+        <select id="curso" name="Curso">
+            <option></option>
+            <option value="DS">Des. Sistemas</option>
+            <option value="ED">Edificações</option>
+            <option value="GE">Geodésia</option>
+            <option value="EN">Enfermagem</option>
+            <option value="ME">Mecânica</option>
+            <option value="QU">Qualidade</option>
+        </select>
+
+        <br><br>
+
+        <label for="Disciplinas">Disciplinas:</label><br>
+        <small>Ctrl+Click</small>
+        <br>
+    <select id="Disciplinas" name="Disciplinas" size="6" multiple>
+        <option value="BD">Banco de Dados</option>
+        <option value="DAW">DAW</option>
+        <option value="APSI">APSI</option>
+        <option value="PI">Projeto Integrador</option>
+        <option value="LP">Lógica</option>
+        <option value="SORD">SORD</option>
+    </select>
+
+    <br><br>
+
+        <label for="Veiculo">Veiculo</label><br>
+        <select id="Veiculo" name="Veiculo">
+
+        <optgroup label="Carros">
+            <option value="BMW">BMW</option>
+            <option value="Citroen">Citroen</option>
+            <option value="Bugatti">Bugatti</option>
+        </optgroup>
+
+        <optgroup label="Motos">
+            <option value="Yamaha">Yamaha</option>
+            <option value="Suzuki">Suzuki</option>
+            <option value="Honda">Honda</option>
+        </optgroup>  
+        </select>
+
+<br><br>
+
+    <label for="conhecimento">Conhecimento</label><br>
+    <input type="text" name="conhecimento" id="conhecimento" list="lista-conhecimento">
+    <datalist id="lista-conhecimento">
+
+        <option value="HTML5">HTML5</option>
+        <option value="HTML4">HTML4</option>
+        <option value="CSS3">CSS</option>
+        <option value="PHP">PHP</option>
+        <option value="PYTHON">Python</option>
+    </datalist>
+
+<br><br>
+
+    <label for="Ben10">Você gosta de ben 10? De uma nota de 0 a 10.</label><br>
+    <input type="range" min="0" max="10 "name="Ben10" id="ben10" value="3.4">
+
+
+    <br><br>
+
+    <label for="Personalidade">Descreva sua personalidade</label><br>
+    <textarea rows="5" cols="60" name="Personalidade" id="Personalidade" maxlength="1000" spellcheck></textarea>
+
+    <br><br>
+
+    <label for="URL">LinkedIn</label>
+    <input type="url" name="url" id="url" required>
+
+    <br></fieldset><br>
+    <input type="submit" value="Cadastrar">
+    <input type="reset" value="Limpar">
+
+    </form>
+
+
+
+
+</body>
+</html>
