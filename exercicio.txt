@@ -1,0 +1,3 @@
+O site se trata de um formulário feito durante a aula de DAW com o intuito de aprender as uncionalidades e diferentes tags utilizadas na criação de um formulário. Eles não possuem real capacidade de armazenar e enviar os dados, pois ainda não aprendemos essa habilidade, ainda estamos na parte de HTML, e essa função é possível apenas utilizando a lógica, no caso Javascript.
+
+Foi desenvolvido por Pedro Henrique e Eduardo Cavalhieri, e teve início dia 03/04/2023
